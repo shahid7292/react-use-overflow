@@ -1,0 +1,83 @@
+{
+  "name": "react-use-overflow",
+  "version": "1.0.0",
+  "description": "React hook to detect vertical and horizontal overflow on HTML element",
+  "license": "MIT",
+  "author": {
+    "name": "Shahidraza Moulvi",
+    "url": "https://github.com/shahid7292"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shahid7292/react-use-overflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shahid7292/react-use-overflow/issues"
+  },
+  "homepage": "https://github.com/shahid7292/react-use-overflow#readme",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/cjs/index.js",
+      "import": "./lib/esm/index.js"
+    }
+  },
+  "scripts": {
+    "browser:update": "browserslist --update-db",
+    "build": "npm run clean:lib && npm run browser:update && npm run build:ts",
+    "build:ts": "npm run build:tsc:cjs && npm run build:tsc:esm",
+    "build:tsc:cjs": "tsc --project tsconfig.build.json",
+    "build:tsc:esm": "tsc --project tsconfig.build.json --module es6 --outDir lib/esm",
+    "clean:lib": "del-cli --force ./lib"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "browserslist": "^4.23.0",
+    "del-cli": "^5.1.0",
+    "eslint": "^8.57.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^5.4.3"
+  },
+  "files": [
+    "README.md",
+    "lib"
+  ],
+  "keywords": [
+    "react-use-overflow",
+    "react",
+    "hooks",
+    "react-hooks",
+    "overflow",
+    "use-overflow"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version",
+      "last 2 edge version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.5.0"
+  }
+}
