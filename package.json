@@ -1,6 +1,6 @@
 {
   "name": "react-use-overflow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook to detect vertical and horizontal overflow on HTML element",
   "license": "MIT",
   "author": {
