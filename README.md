@@ -1,7 +1,7 @@
 `react-use-overflow` determines whether an element exceeds its allotted size, causing overflow.
 
 ```bash
-npm install react-loader-spinner --save
+npm install react-use-overflow --save
 ```
 
 ```jsx
